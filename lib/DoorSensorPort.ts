@@ -46,7 +46,8 @@ export default class DoorSensorPort extends GPIOPort {
 			default:
 				this.updateCurrentDoorState();
 		}
-
+		var isObstruction = getObstructionDetected(this.service);
+		log.info(isObstruction);
 		// Handle external state change.
 		var targetState = getTargetDoorState(this.service);
 		if ((this.isClosed && targetState == Characteristic.TargetDoorState.OPEN)
