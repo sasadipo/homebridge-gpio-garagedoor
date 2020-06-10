@@ -13,7 +13,9 @@ export default class DoorStateExtension {
 export function getCurrentDoorState(service): any {
 	return service.getCharacteristic(Characteristic.CurrentDoorState).value;
 }
-
+export function getObstructionDetected(service): any {
+	return service.getCharacteristic(Characteristic.ObstructionDetected).value;
+}
 export function getTargetDoorState(service): any {
 	return service.getCharacteristic(Characteristic.TargetDoorState).value;
 }
