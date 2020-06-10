@@ -4,7 +4,7 @@
   "version": "0.2.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kraigm/homebridge-gpio-garagedoor.git"
+    "url": "git://github.com/sasadipo/homebridge-gpio-garagedoor.git"
   },
   "license": "ISC",
   "preferGlobal": true,
